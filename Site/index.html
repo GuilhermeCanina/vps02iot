@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de entradas e saídas da empresa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de entradas e saídas da empresa</h1>
+    </header>
+    <main>
+        <section class="charts">
+            <div class="chart">
+                <h2>Diariamente</h2>
+                <img src=".\fotos\diario.png" alt="Gráfico diário">
+            </div>
+            <div class="chart">
+                <h2>Semanalmente</h2>
+                <img src=".\fotos\semanal.png" alt="Gráfico semanal">
+            </div>
+        </section>
+
+
+        <button id="goToTable">Ir para a tabela</button>
+    </main>
+    <script src="script.js"></script>
+
+    <script>
+    
+        document.getElementById('goToTable').addEventListener('click', function() {
+
+            window.location.href = "tabela.html";
+        });
+    </script>
+</body>
+</html>
